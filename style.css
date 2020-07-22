@@ -1,0 +1,221 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  width: 100%;
+  font-family: 'Noto sans', sans-serif;
+}
+  
+
+a {
+  color: black;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-weight: bold;
+}
+h2 {
+  font-size: 2rem;
+}
+
+ul {
+  
+  list-style-type: none;
+}
+
+/* Der Knopf soll transparent sein und keinen Ramen haben*/
+
+button {
+  background-color: transparent;
+  border: none;
+}
+
+#hauptmenu {
+  display: none;
+}
+
+#hauptmenu.show {
+  display: block;
+  background: #fff;
+  width: 100%;
+  position: fixed;
+  left: 0;
+  top: 4rem;
+  text-align: center;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  height: 4rem;
+  padding-left: 5%;
+  padding-right: 5%;
+}
+
+#intro {
+  background-image: linear-gradient (90deg),
+  rgba (0, 0, 0, 0.5) 0%,
+  rgba (32, 31, 31, 0.5) 100%
+  ),url('img/intro.jpg');
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-image: url(img/intro.jpg);
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#intro h1,
+#intro p {
+  color: #ffffff;
+}
+#intro p{
+  margin-bottom: 50px;
+}
+
+
+.knopf {
+  color:#374a67;
+  background-color: #ffffff;
+  border-radius: 5px;
+  padding: 1rem;
+  border-color: #374a67;
+  border-style: solid;
+  border-width: 1px;
+  transition: all 0.5s;
+}
+
+.knopf:hover {
+  color: #ffffff;
+  background-color: #374a67;
+}
+.card img {
+  display: block;
+  width: 100%;
+
+}
+.card a {
+  text-transform: none;
+  font-weight: unset;
+
+}
+.card p a  {
+  test-transofrm: none;
+  font-weight: unset;
+
+}
+.card p a {
+  color: #828282;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  display: block;
+}
+.card {
+  text-align: center;
+  overflow: hidden;
+  margin: 0.5em;
+  border-radius: 5px;
+  box-shadow: opx 5px 5px 0px rgba(0, 0, 0, 0, 0.75);
+
+}
+
+.card .knopf {
+  color: #fff;
+  background-color: #374a67;
+  display: block;
+  margin: 1rem;
+
+}
+.card .knopf:hover {
+  color: #374a67;
+  background-color:#fff;
+
+}
+#rezepte {
+  text-align: center;
+}
+form button {
+  display: block;
+}
+
+#newsletter {
+  background:#04122B;
+  color: #fff;
+  font-weight: bold;
+  text-align: center;
+  padding: 3rem;
+ 
+}
+
+#newsletter form {
+  display: flex;
+  justify-content: center;
+}
+#social-menu ul{
+  display: flex;
+  justify-content: center;
+
+
+}
+#rechtliches {
+  text-align: center;
+
+
+}
+
+#social-menu li {
+  margin: 1rem;
+  font-size: 2rem;
+}
+
+ul {
+  padding-left: 0;
+}
+
+/* Media Query für Größe Geräte */
+
+@media (min-width: 768px) {
+  button {
+    display: none;
+  }
+  #hauptmenu {
+    display: block;
+  }
+
+  #hauptmenu ul {
+    display: flex;
+  }
+
+  #hauptmenu li {
+    margin-left: 20px;
+  }
+
+.row {
+  display: flex;
+
+}
+
+
+}
+
+#footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem;
+}
+
+#rechtliches ul {
+  display: flex;
+}
+
+#rechtliches li {
+  margin: 1rem;
+}
+}
+
+ 
